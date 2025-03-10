@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+
+	<!-- blueprint CSS framework -->
+	<!--link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/<?php echo Yii::app()->theme->name;?>/main.css" media="screen, projection" /-->
+	
+	<?php
+	
+	echo CHtml::cssFile(Yii::app()->request->baseUrl.'/css/'.Yii::app()->theme->name.'/main.css','screen,projection');
+//	echo CHtml::cssFile(Yii::app()->request->baseUrl.'/css/'.Yii::app()->theme->name.'/jquery.alerts.css','screen,projection');
+	Yii::app()->getClientScript()->registerCssFile(Yii::app()->request->baseUrl.'/css/avtospektr/jquery.alerts.css');
+	echo CHtml::cssFile(Yii::app()->request->baseUrl.'/css/'.Yii::app()->theme->name.'/bacauto/style.css','screen,projection');
+	Yii::app()->getClientScript()->registerCoreScript('jquery');
+	Yii::app()->getClientScript()->registerCoreScript('scroll');
+	Yii::app()->getClientScript()->registerCoreScript('alerts');
+	//echo CHtml::scriptFile(Yii::app()->request->baseUrl.'/js/'.Yii::app()->theme->name.'/jquery.scrollTo.min.js');
+//	echo CHtml::scriptFile(Yii::app()->request->baseUrl.'/js/'.Yii::app()->theme->name.'/jquery.alerts.js');
+	echo CHtml::scriptFile(Yii::app()->request->baseUrl.'/js/'.Yii::app()->theme->name.'/functions.js');
+	
+	?>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+	<![endif]-->
+
+	<!--link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" /-->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+
+
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	
+	<?php echo $this->javascript_items;?>
+	
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+
+		var sidebar_height = $('#sidebar').height();
+//		alert(sidebar_height);
+		
+		
+		sidebar_height = (sidebar_height*1) - 12;
+	
+	
+		$('#content').css({'min-height':sidebar_height});
+		
+		
+		<?php if(Browser::get_browser()=='Chrome'):?>
+		
+			add=78;
+		<?php else:?>
+		
+			add=22;
+		<?php endif;?>
+		
+	container_height=$('#header').height()+$('#firms').height()+$('#nav_bar').height()+$('.main_container').height()+add;
+	
+		$('.left_green').css({'height':container_height});
+		$('.right_green').css({'height':container_height});
+	
+
+	
+	});
+	
+	$(window).resize(function(){
+	
+	resize_content();
+		
+	
+});
+	
+	
+	
+	</script>
+	
+</head>
+
+<body>
+<div id="wrapper">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="right" valign="top" >
+
+
+<div class="left_green">
+<img src="/images/avtospektr/left_green_new4.png" />
+<!--img src="/images/avtospektr/left_fill.png" style="float:right;" id="left_fill"/-->
+</div>
+
+</td>
+<td id="container" valign="top" width="1000">
+
+<div id="header"></div>
+<div id="firms"></div>
+<div id="nav_bar">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td width="300" class="label">
+<font>Каталог товаров</font>
+</td>
+<td class="label" width="149">
+<font>Главная</font>
+</td>
+<td class="label" width="198">
+<font>Поиск запчастей</font>
+</td>
+<td class="label" width="198">
+<font>Информация</font>
+</td>
+<td class="label" width="151" style="border-right:0px solid #617156;">
+<font>Контакты</font>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="main_container">
+<div id="sidebar">
+
+<!-----------------Виджет меню каталога----------------------------------------------->
+	
+	<?php
+	// $this->beginWidget('application.modules.catalog.components.CatalogMenuWidget');
+	 $this->Widget('application.modules.catalog.components.CatalogMenuWidget');
+		
+		//$this->endWidget();
+		?>
+	<div id="menu_authorization">
+	<table cellpadding="0" cellspacing="0" id="authorization" width="100%">
+		
+		<?php if (UserIdentity::getProperty('fio')):
+		
+		
+		else:
+			
+			////////////////////////Виджет блока авторизации/////////////////////////////////
+	$this->Widget('application.components.LoginWidget');
+		
+	<?phpendif;?>
+		
+	</table>
+	</div>
+	
+	<!-----------------Виджет блока новостей----------------------------------------------->
+	
+	<?php $this->beginWidget('application.components.NewsWidget');
+		
+		$this->endWidget();
+		?>
+
+	</div>
+<div id="container_content">
+<div id="content">
+<?php
+//echo $content;
+
+?>
+</div>
+
+</div>
+<div class="clear"></div>
+
+	<!-----------------Виджет блока партнеров----------------------------------------------->
+	
+	<?php $this->beginWidget('application.components.PartnersWidget');
+		
+		$this->endWidget();
+		?>
+</div>
+
+
+</td>
+
+<td align="left" valign="top" class="left_fill">
+<div class="right_green">
+<img src="/images/avtospektr/right_green_new4.png" />
+
+</div>
+</td>
+</tr>
+<td>
+
+</td>
+<td width="1000" valign="top">
+<table id="footer" width="100%">
+	<tr>
+		<td id="copyright" align="left">
+			© 2012 Все права защищены Автоспектр
+		</td>
+	<td align="right">
+	<!-----------------Виджет addthis----------------------------------------------->
+	
+	<?php 
+	 
+	if($this->beginCache('addthis',array('duration'=>86400))){
+		
+	
+	$this->beginWidget('application.components.AddthisWidget');
+		
+		$this->endWidget();
+		$this->EndCache();
+		}
+		
+		?>
+	</td>
+	</tr>
+</table>
+</td>
+</table>
+</div>
+
+</body>
+</html>

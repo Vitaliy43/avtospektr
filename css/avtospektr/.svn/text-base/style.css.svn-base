@@ -1,0 +1,1009 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html { font: .75em/1.5 Verdana,Arial,Helvetica, sans-serif; }
+
+.breadcrumbs {padding-left: 5px;}
+
+a {color: #000; text-decoration: none;}
+
+img {
+	border: none;
+}
+
+body{
+	background: url(../../images/avtospektr/layout/bg2.jpg) repeat;
+	position: relative;
+    overflow-x: hidden;
+}
+.wrapper {
+	min-width: 1024px;
+	max-width: 1600px;
+	margin: 0 auto;
+	/*min-height: 100%;*/
+	position: relative;
+	z-index:5;
+	background: url(../../images/avtospektr/layout/bg-small.jpg);
+}
+
+.header-main {
+	background: url(../../images/avtospektr/layout/bg-logo.png) repeat;
+	height: 226px;
+	position: relative;
+	width: 100%;
+	z-index: 50;
+}
+
+.select-year, .select-year ul {
+
+    padding:0;
+    padding-right: 0px;
+    list-style:none;
+    background:#FFFFFF;
+    font:14px "Century Gothic";
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+.select-year ul{
+    width:125px;
+    position:absolute;
+    top:30px;
+    left:0;
+    display:none;
+
+}
+
+.select-year{
+    height:20px;
+}
+
+.select-year li{
+    float:right;
+    position:relative;
+    background:url(./menu-bg.jpg) left center no-repeat;
+}
+
+.select-year a{
+    color:#000;
+    text-decoration:none;
+    display:block;
+    width:125px;
+    text-decoration: underline;
+    /*border-right:1px solid #000;*/
+    text-align:center;
+}
+
+.select-year a:hover{
+    background:#C4E5AD;
+}
+
+.select-year ul a{
+    border:none;
+}
+
+.select-year li:hover ul/*, .menu li.jshover ul*/ /*, .menu li.hover ul*/{
+    /*display:block;*/
+}
+
+
+.select-town, .select-town ul {
+
+    padding:0;
+    padding-right: 0px;
+    list-style:none;
+    background:#000;
+    font:18px/50px "Century Gothic";
+    position: relative;
+    z-index: 100;
+}
+
+.select-town ul{
+    width:275px;
+    position:absolute;
+    top:50px;
+    left:0;
+    display:none;
+
+}
+
+.select-town{
+    height:50px;
+}
+
+.select-town li{
+    float:right;
+    position:relative;
+    background:url(./menu-bg.jpg) left center no-repeat;
+}
+
+.select-town a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    width:275px;
+    text-decoration: underline;
+    /*border-right:1px solid #000;*/
+    text-align:center;
+}
+
+.select-town a:hover{
+    background:#350202;
+}
+
+.select-town ul a{
+    border:none;
+}
+
+.select-town li:hover ul/*, .menu li.jshover ul*/ /*, .menu li.hover ul*/{
+    /*display:block;*/
+}
+
+
+select {
+	text-decoration: underline;
+}
+
+.logo {
+	height: 110px;
+	margin: 40px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+#h-line-r {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+#logo {
+	float: left;
+	left: 0;
+	margin: 0 0 0 24px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+}
+
+#car {
+	float: right;
+	margin: 0 24px 0 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#h-bottom-left {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+#h-bottom-right {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+#phone {
+	color: #fff;
+	font: 19px verdana;
+	font-style: italic;
+	font-weight: bold;
+	position: absolute;
+	bottom: 25px;
+	right: 20px;
+}
+
+.menu-car {
+	min-width: 1024px;
+	max-width: 1600px;
+	padding: 0 0 5px 0;
+	background: #fff;
+    z-index: 50;
+    position: relative;
+
+}
+
+.menu-car ul {
+	display: table-row;
+	list-style: none;
+}
+
+.menu-car ul li {
+	width: auto 50px;
+	text-align: center;
+	vertical-align: bottom;
+	display: table-cell;	
+	height: 50px;
+	padding: 0 9px;
+}
+
+.menu-car ul li img {
+	display: table-caption;
+	margin: 0 auto;
+	background: url(../../images/avtospektr/layout/car-bg.png);
+}
+
+.menu-car ul li a {
+	width: 1600px;
+	display: table-cell;
+	color: #53852f;
+	font: 10px Arial;
+	text-decoration: none;
+	border: 1px solid #bde0a3; 
+	background: url(../../images/avtospektr/layout/car-bg.png);
+}
+
+.menu-car ul li a:last-child {
+	margin-right: 0;
+}
+.karkas{
+	overflow: hidden;
+	padding: 0 0 50px 0;
+	background: #fff;
+	z-index: 50;
+	position:relative;
+
+}
+#sidebar{
+	border-right: 1px solid #556c44;
+	float: left;
+	overflow: hidden;
+	width: 300px;
+	border-bottom: 1px solid #bde0a3;
+}
+#head-left-menu{
+	background: url(../../images/avtospektr/layout/menu-bg.png) repeat-x;
+
+}
+#sidebar h1 {
+	filter: dropshadow(color=#ffffff, offx=1, offy=1);
+	text-shadow: 1px 1px 0px #ffffff;
+	font: bold 18px verdana;
+	color: #000;
+	margin: 0 0 0 9px;
+	height: 40px;line-height: 40px;
+}
+#sidebar ul{
+	color: #000;
+	display: table-row;
+}
+#sidebar ul li{
+	margin: 0 0 0 9px;
+	height: 39px;
+	display: table-row;
+}
+	#sidebar ul li a{
+		color: #000;
+		width: 301px;
+		display: table-cell;
+		border-bottom:1px solid #7f7f7f;
+		border-top:1px solid #bde0a3;
+		line-height: 39px;
+		padding: 0 0 0 9px; 
+		text-decoration: none;
+		background: transparent url(../../images/avtospektr/layout/arrow.png) 270px 10px no-repeat;
+	}
+	#sidebar ul li a:hover{
+		background-position: 270px -29px;
+		color: #4fc541;	
+	}
+	.enter-login{
+		margin: 15px 30px 15px 15px;
+		font: 14px verdana;
+	}
+		.enter-login input[type="text"], .enter-login input[type="password"]{
+			width: 100%;
+			margin: 5px 0;
+			padding: 5px;
+		}
+		.enter-login input[type="submit"]{
+			font: bold 18px verdana;
+			height: 29px;
+			width: 136px;
+			line-height: 29px;
+			background: url(../../images/avtospektr/layout/button.png) repeat-x;
+			margin: 10px auto;
+			display: block;
+		}
+
+	.office ul{
+		display: block;	
+	}
+		.office ul li{
+			margin: 0 0 0 9px;
+		 	height: 39px;
+		}
+		.office ul li a{
+			color: #000;
+			width: 301px;
+			display: table-cell;
+			border-bottom:1px solid #7f7f7f;
+			border-top:1px solid #bde0a3;
+			line-height: 39px;
+			padding: 0 0 0 9px; 
+			text-decoration: none;
+			background: transparent url(../../images/avtospektr/layout/arrow.png) 270px 10px no-repeat;
+		}
+		.office ul li a img{
+			position: relative;
+			top: 10px;
+		}
+
+	.news{
+		margin: 0 0 15px 0;
+		padding: 15px;
+	}
+	.news h3{
+		font: bold 14px verdana;
+		color: #7cc34a;
+		filter: dropshadow(color=#000000, offx=1, offy=1);
+		text-shadow: 1px 1px 0px #000000;
+		margin-bottom: 5px;
+	}
+	.news img{
+		float: left;
+		margin: 0 15px 5px 0;
+		border: 1px solid #d2d2d2;
+	}
+.content{
+	margin: 0 0 0 300px;
+}
+		.main-menu {
+			min-width: 1024px;
+			max-width: 1600px;
+			background: url(../../images/avtospektr/layout/menu-bg.png) repeat-x;
+		}
+
+		.main-menu ul {border-top:1px solid #bde0a3;
+			display: table-row;
+			list-style: none;
+		}
+
+		.main-menu ul li {
+			width: auto;
+			text-align: center;
+			vertical-align: middle;
+			display: table-cell;
+			height: 40px;
+			border-right: 1px solid #556c44;
+        	border-left: 1px solid #5a9d39;
+		}
+
+
+
+
+		.main-menu ul li a {
+			width: 1600px;
+			display: table-cell;
+			color: #000;
+			font: bold 18px verdana;
+			text-decoration: none;
+			height: 40px;
+			text-shadow: 1px 1px 0px #ffffff;
+        	filter: dropshadow(color=#ffffff, offx=1, offy=1);
+			vertical-align: middle;
+			border-bottom: 1px solid #cfcfcf;
+
+		}
+		.main-menu ul li:last-child {
+        	border-right: none;
+        }
+		.info{
+			margin: 10px;
+			border: 1px solid #bde0a3;
+			padding: 15px;
+			height: 100%;
+		}
+		.info ul, .info ol{
+			padding: 20px;
+		}
+
+
+.user{
+	overflow: hidden;
+}
+.user-menu{
+	background: url(../../images/avtospektr/layout/menu-u-bg.png) repeat-x;
+padding: 9px;
+	height: 27px;
+
+}
+	.user-menu h1{
+		float: left;
+		line-height: 45px; 
+		font: bold 18px "Minion Pro";
+		text-shadow: 1px 1px 0px #ffffff;
+        filter: dropshadow(color=#ffffff, offx=1, offy=1);
+        margin: 0 15px 0 0;
+	}
+	.user-menu select{
+		width: 215px;
+		padding: 5px;
+		float: left;
+        font: 15px "Minion Pro";
+        color: #0B4C19;
+	}
+	.user-menu p{
+		
+		text-align: right;
+		font: bold 14px "Minion Pro";
+		margin: 4px 0;
+	}
+	.user-menu p span{
+		color: red;
+	}
+	.additional-menu{
+		overflow: hidden;
+		background: #fff;
+		height: 39px;
+	}
+		.additional-menu ul{
+			
+		}
+		.additional-menu ul li{
+			float: left;
+			background: url(../../images/avtospektr/layout/separator.png) 0 0 no-repeat;
+			list-style: none;
+			padding: 9px;
+		}
+			.additional-menu ul li:first-child{
+			background: none;
+			
+		}
+
+    .additional-menu ul li span{
+    font: bold 14px "Minion Pro";
+    color: #000;
+    text-decoration: none;
+    }
+
+		.additional-menu ul li a{
+			font: bold 14px "Minion Pro";
+			color: #000;
+			text-decoration: none;
+		}
+			.additional-menu ul li:hover{
+				background-color: #daeecc;
+				border-radius: 10px;
+			}
+
+
+.user-content{
+	padding: 9px;
+	background: #ffffff;
+}
+
+
+
+
+form #form-zapros {padding: 10px;
+    overflow: hidden;
+    background: #f6fef0;
+}
+
+
+
+#form-zapros label{width: 222px; float: left; padding-top: 4px;
+}
+#form-zapros input{width: 380px;}
+#form-zapros p {margin: 0 0 15px 0;}
+#form-zapros input[type="checkbox"]{
+	width: auto;
+}
+
+#form-zapros input[type="submit"]{
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+#form-zapros  input, #form-zapros  textarea {
+	min-width: 350px;
+	max-width: 350px;
+	padding: 9px;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px;
+	box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+	-moz-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+}
+
+#form-zapros  select{
+	min-width: 370px;
+	max-width: 370px;
+	padding: 9px;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px;
+	box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+	-moz-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);	
+}
+#form-zapros  input:hover, #form-zapros  select :hover,
+#form-zapros  input:focus, #form-zapros  select :focus{
+	border-color: #7dc34a;
+	box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+	-moz-box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+	-webkit-box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+}
+#form-submit {
+	margin: 0 10px;
+	float: left;
+	background: #ffffff;
+
+}
+			
+
+
+.our-parners{
+	min-width: 1024px;
+	max-width: 1600px;
+	background: #ffffff;
+	padding: 9px;
+    float: left;
+	position:relative;
+}	
+.our-parners h1{
+	color: #7cc34a;
+	font: bold 24px verdana;
+	text-shadow: 1px 1px 0px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+    margin: 0 0 10px 0;
+
+}	
+.our-parners ul{
+	display: table-row;
+	list-style: none;
+}
+	.our-parners ul li{
+		width: auto 50px;
+		text-align: center;
+		vertical-align: bottom;
+		display: table-cell;	
+		height: 50px;
+		padding: 0 9px;
+	}
+
+	.our-parners ul li a{
+		width: 1600px;
+		display: table-cell;
+		color: #7bc248;
+		font: 10px Arial;
+		text-decoration: none;
+	}
+.footer{
+	padding: 0 9px;
+	color: #7cc34a;
+	font: 12px verdana;
+	overflow: hidden;
+    float: left;
+    background: url(../../images/avtospektr/layout/bg2.jpg) repeat;
+    width: 99%;
+    margin-bottom: 0px;
+    max-width: 1600px;
+	position:relative;
+}
+#recive{
+	float: left;
+	line-height: 100px;
+}
+.share{
+	float: right;
+	margin: 35px 0;
+
+}
+.share a {color: #fff;}
+
+
+
+
+#menu_catalog {border: 1px solid #bde0a3;}
+
+
+
+.menu_option span {
+
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.fio span {
+
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.profile_option div {
+
+    margin-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.profile {padding-bottom: 0px;}
+
+.profile_option img{
+
+
+    padding-right: 10px;
+
+
+}
+
+.menu_option:hover {cursor: pointer;}
+
+.fio:hover {cursor: default;}
+
+
+.submenu1_option {background: #def1d9;}
+.submenu2_option {background: #caf1c0;}
+
+.submenu1_option span {
+
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 12px;
+
+
+}
+
+.submenu2_option span {
+
+    padding-left: 70px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 11px;
+
+}
+.container { padding: 10px 0px 10px 10px;}
+
+#content {
+   /* border: 1px solid #bde0a3;*/
+    min-height: 500px;
+    height: 100%;
+    padding: 5px 0px 5px 5px;
+}
+
+.submenu1_option .menu_arrow img {padding-top: 0px; padding-bottom: 0px; padding-right: 0.7em;}
+.submenu2_option .menu_arrow img {padding-top: 0px; padding-bottom: 0px; padding-right: 0.7em;}
+
+.menu_arrow img {padding-top: 10px; padding-bottom: 10px; padding-right: 8px;}
+.menu_row {border-bottom: 1px solid #7f7f7f;border-top: 1px solid #bde0a3;}
+
+.auth {vertical-align: middle;}
+#authorization font {vertical-align: middle;}
+.auth_input {width: 230px;}
+.authorization div {width: 100%;padding-left: 30px;padding-top: 4px;color: #000;
+    font-size: 13px;}
+.authorization input {border-right: 1px solid #bde0a3;border-bottom: 1px solid #bde0a3;border-left: 1px solid #7f7f7f; border-top: 1px solid #7f7f7f;}
+
+.reg_forget {text-align: left;}
+.reg_forget div {margin-top: -10px;}
+.reg_forget div a {margin-left: -60px;}
+
+.auth_submit {background: #bde0a3; font-size: 14px;width: 100px; height: 25px;}
+#menu_authorization {margin-bottom: 10px;border-right: 1px solid #bde0a3;}
+
+.product_info td {background: #c8ddc3;font-weight: bold;}
+.product_info th {background: #b0dda5;font-weight: bold;}
+#content h2,h1 {padding-left: 5px;}
+
+.pager {margin-bottom: 15px;padding-left: 5px;}
+.num_pages {margin-left: 10px;font-size: 11px;text-align: right;}
+#container_info_table {margin-bottom: 15px;padding-left: 5px;}
+.filter {padding-left: 5px;margin-bottom: 10px;}
+.filter input {border: 1px solid #000000;}
+.filter #container_filter div {border: 1px inset #023e21;margin-top: 3px;}
+
+#status_filter {width: 500px;padding: 4px;background: #dff4b7;}
+#clients_filter {width: 500px;padding: 4px;background: #edf5de;}
+#client {width: 235px;margin-left: 10px;}
+#status_id {width: 235px;margin-left: 3px;border: 1px solid #000000;}
+#distributor {width: 201px;margin-left: 10px;border: 1px solid #000000;}
+#distributors_filter {width: 500px;padding: 4px; background: #d9eab8;}
+#time_filter {width: 500px;padding: 4px; background: #d3f298;}
+#number_filter {padding: 4px; width: 500px; background: #c2f499;}
+#input_number {width: 200px;margin-left: 14px;}
+#manufacturer_filter {padding: 4px; width: 500px; background: #b0ee7f;}
+#description_filter {padding: 4px; width: 500px; background: #b5eaa7;}
+#manufacturer_number {width: 200px;margin-left: 4px;}
+
+#description {margin-left: 38px;border: 1px solid #000000;width: 355px;}
+#turner_filter {margin-bottom: 3px;}
+#type_payments {width: 200px;margin-left: 20px;}
+#type_operation {width: 200px;margin-left: 12px;}
+#submit_filter {border: 0px !important; margin-top: 10px !important;margin-bottom: 10px;}
+.no_results {margin-left: 5px;font-weight: bold;}
+
+.parts_list {cursor:pointer;text-decoration:underline;}
+.partshidden_list {display:none;z-index:1;position:absolute;}
+.list_clients {border: 1px solid #000000;}
+.finance_info {padding-left: 10px;font-weight: bold;}
+.link_info {text-decoration: underline;cursor: pointer;}
+#time_filter #formDate1 {margin-left: 16px;}
+.list_statuses {font-size: 10px;border: 1px inset #000;width: 140px;}
+#to_work_popup {padding: 5px;}
+#to_work_popup .info {margin-top: 5px;}
+.order_statistic {margin-left: 5px;margin-bottom: 10px;}
+.order_statistic a {text-decoration: underline;}
+.payments_sum {width: 160px;}
+.container_chart {padding-left: 10px;padding-right: 5px;}
+#container_choice_year {padding-left: 0px;}
+.client_info {padding-top: 15px;padding-left: 10px;font-weight: bold;padding-bottom: 10px;padding-right: 10px;}
+.client_info .inner_client_info {border: 1px solid #089a53;}
+.edit_block {padding-left: 5px;width: 500px;}
+
+.edit_block #limit_credit {width: 50px;}
+.input_markups {width: 30px;}
+#add_markup {margin-left: 2px;}
+#add_markup span {cursor: pointer; text-decoration: underline;}
+#container_input_distributor {display: none;}
+.container_tiny {padding: 5px 5px 10px 5px;}
+#catalog_info {padding: 5px;}
+#catalog_info a {font-size: 14px;font-weight: bold;}
+.add_client {padding-left: 35%;margin-bottom: 10px;}
+.add_client a {text-decoration: underline;color: #047b42;}
+.add_client  img {margin-bottom: -3px;}
+.catalog_link a {text-decoration: underline;color: #034726;}
+#form_import {padding-left: 10px;}
+.container_control span.header {font-weight: bold;}
+.container_control span.control {font-size: 12px;}
+#import_block_message {padding-left: 10px;margin-top: 10px;}
+.product_info td {background: #c8ddc3;font-weight: bold;}
+.product_info th {background: #b0dda5;font-weight: bold;}
+.store_buttons a {margin: 2px;}
+.store_buttons a span {background: #c8ddc3;font-weight: bold;padding: 3px;}
+.edit_distributor input.text {width: 200px;}
+.edit_accesses input {width: 145px;}
+#profile_user {padding-left: 5px;background:  #D3F298;padding-bottom: 10px;width: 90%;}
+.input_text {border: 1px inset #73B244;width: 250px;}
+.profile_label {margin-bottom: 5px;font-weight: bold;}
+#profile_password {text-decoration: underline; cursor: pointer;}
+#container_profile_password {padding-bottom: 15px;;margin-top: 10px;padding-right: 15px;}
+#container_profile_password input {margin-left: 5px;}
+#container_profile_submit {padding-top: 10px;}
+#container_export {margin-left: 245px;}
+#container_editor {padding-top: 10px;width: 95%;}
+#content_header {min-width: 400px;}
+#content_submit {margin-top: 15px;}
+
+#form-zapros label{width: 222px; float: left; padding-top: 4px;}
+#form-zapros input{width: 380px;}
+#form-zapros p {margin: 0 0 15px 0;}
+#form-zapros input[type="checkbox"]{
+    width: auto;
+}
+
+#form-zapros input[type="submit"]{
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form-zapros  input, #form-zapros  textarea {
+    min-width: 350px;
+    max-width: 350px;
+    padding: 9px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+    -moz-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+}
+
+#form-zapros  select{
+    min-width: 370px;
+    max-width: 370px;
+    padding: 9px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+    -moz-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0 ,0, 0.1);
+}
+#form-zapros  input:hover, #form-zapros  select :hover,
+#form-zapros  input:focus, #form-zapros  select :focus{
+    border-color: #7dc34a;
+    box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+    -webkit-box-shadow: 0 0 8px rgba(125, 195,74, 0.3);
+}
+#form-submit {
+    padding: 10px;
+
+    background: #ffffff;
+    display: table-cell;
+
+}
+
+table.info_table,table.saldo,table.t-order {
+    border-collapse: collapse;
+}
+table.order{
+    margin: 20px 0 0 0;
+}
+table.info_table tr,table.saldo tr,table.t-order tr {
+    display: table-row;
+}
+table.info_table th,table.saldo th, table.t-order th{
+    border: 1px solid #BDE0A3;
+    line-height: 40px;
+    background: #e0fdca;
+}
+table.info_table td,table.saldo td, table.t-order td{
+    display: table-cell;
+    width: 1600px;
+    text-align: center;
+    border: 1px solid #BDE0A3;
+    height: 40px;
+}
+table.info_table tr td#nomerZakaza{
+    text-align: left;
+    width: 250px;
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid #BDE0A3;
+}
+table.info_table tr td#codDetali, table.info_table tr td#manufacturer, table.info_table tr td#opisanie,table.saldo tr td#saldo-left {
+    text-align: left;
+    padding: 0 10px;
+    height: 40px;
+
+}
+table.t-order tr th#ch{
+    width: 10px;
+}
+
+.authorization button{
+    margin-left: -2px;
+    width: 100px;
+    height: 27px;
+    background: #daeecc;
+}
+
+.order button{
+    margin: 20px 20px 20px 0;
+    padding: 5px 10px;
+    background: #daeecc;
+}
+.balance, .order{
+    background: #f6fef0;
+    position: relative;
+    padding: 0 0 24px 0;
+}
+.balance p{
+    font:12px verdana;
+    line-height: 42px;
+    height: 42px;
+}
+.balance p span{
+    font:10px verdana;
+    color:#3f7f10;
+}
+.balance button{
+    margin: 20px 20px 20px 0;
+
+}
+
+#bill{
+    text-align: right;
+    height: 49px;
+    width:280px;
+    background: url(../../images/avtospektr/bill.png) no-repeat;
+    font: bold 18px Verdana;
+    color: #3f7f10;
+    line-height: 49px;
+    right: 0;
+    margin-right: 10px;
+    bottom:-20px;
+    position: absolute;
+    white-space: nowrap;
+
+}
+#bill a{
+    color: #3f7f10;
+    text-decoration: underline;
+}
+#bill a:hover{
+    text-decoration: none;
+}
+
+#important{
+    font:12px verdana;
+    color: #ff0000;
+    line-height: 42px;
+    height: 42px;
+}
+
+table.t-balance tr th span{
+    margin: 0 50px 0 5px;
+}
+table.t-balance tr td{
+    font: bold 12px verdana;
+    color: #3f7f10;
+
+}
+table.t-balance a {text-decoration: underline;}
+
+table.discount{
+    border-collapse: collapse;
+
+}
+table.discount tr{
+    display: table-row;
+    padding: 0;
+}
+table.discount th{
+    border: 1px solid #BDE0A3;
+    line-height: 40px;
+    background: #e0fdca;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+table.discount th:first-child{
+    border:none;
+    line-height: 40px;
+    background: none;
+}
+
+table.discount td{
+    display: table-cell;
+    text-align: center;
+    border: 1px solid #BDE0A3;
+    padding: 5px;
+}
+.saldo{
+    margin: 30px 10px 30px 0px;
+}
+.saldo label{
+    margin: 0 0 0 35px;
+}
+.saldo input{
+    width: 20px;
+    padding: 5px;
+    border: 1px solid #bde0a3;
+    text-align: center;
+}
+.saldo input:focus{
+    border: 2px solid #bde0a3;
+}
+.saldo input#month, .saldo input#year{
+    width: 70px;
+    padding: 5px;
+
+}
+.saldo button{
+    width: 70px;
+    padding: 3px;
+    background: #daeecc;
+}
+.saldo button:hover, .order button:hover{
+    background: #c4e5ad;
+}
+
+.validate_message {font-size: 10px;}
+
+.add_point {width: 200px;}
+.pricing {width: 70px;}
+
+.warnings div {color: red;}
+
+#settings_firm {padding: 5px; }
+#settings_firm div {margin-bottom: 15px;}

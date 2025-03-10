@@ -1,0 +1,77 @@
+10
+
+dir
+14
+file:///F:/repositories/avtospektr/protected/modules/client
+file:///F:/repositories/avtospektr
+
+
+
+2012-11-07T08:02:36.884752Z
+14
+Виталик
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+13183220-6885-e448-a2e4-f85b7fb434d2
+
+models
+dir
+
+components
+dir
+
+controllers
+dir
+
+messages
+dir
+
+ClientModule.php
+file
+40
+
+
+
+2012-11-28T06:14:21.493019Z
+ffea559b7ae1f361132f184040610b46
+2012-11-28T10:11:39.880047Z
+40
+Виталик
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+294
+
+views
+dir
+

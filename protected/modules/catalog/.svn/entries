@@ -1,0 +1,88 @@
+10
+
+dir
+1
+file:///F:/repositories/avtospektr/protected/modules/catalog
+file:///F:/repositories/avtospektr
+
+
+
+2012-10-22T09:27:31.117454Z
+1
+Виталик
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13183220-6885-e448-a2e4-f85b7fb434d2
+
+extensions
+dir
+
+
+
+delete
+
+models
+dir
+
+components
+dir
+
+controllers
+dir
+
+CatalogModule.php
+file
+66
+
+
+
+2012-12-26T13:02:17.017150Z
+7aa7f8d7b38cae4d90b3cc56b3778fe4
+2012-12-26T14:16:23.553477Z
+66
+Виталик
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+252
+
+modules
+dir
+
+
+
+delete
+
+views
+dir
+

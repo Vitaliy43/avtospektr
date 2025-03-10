@@ -1,0 +1,65 @@
+
+#hesterni-top-left{
+	background: url(../../images/avtospektr/layout/hesterni.png) no-repeat;
+	position: absolute;
+	height: 398px;
+	width: 348px;
+	left: -150px;
+	opacity: 0.3;
+}
+#spring-top-left{
+	background: url(../../images/avtospektr/layout/spring-top.png) no-repeat;
+	position: absolute;
+	height: 265px;
+	width: 159px;
+	left: -77px;
+	top:365px;
+	opacity: 0.2;
+}
+
+#hesterni-top-right{
+	background: url(../../images/avtospektr/layout/hesterni.png) no-repeat;
+	background-position: right;
+	position: absolute;
+	opacity: 0.3;
+	height: 398px;
+	width: 348px;
+	left: 1377px;
+	
+	-moz-transform: rotate(90deg); /*Firefox */ 
+	-webkit-transform: rotate(90deg); /* Safari Chrome */ 
+	-o-transform: rotate(90deg); /* Opera */ 
+	transform: rotate(90deg); /* CSS3 */ 
+	-ms-transform: rotate(90eg); /* IE9 */ 
+	-ms-filter:'progid:DXImageTransform.Microsoft.Matrix(M11=6.123031769111886e-17,M12=-1,M21=1,M22=6.123031769111886e-17, SizingMethod="auto expand", enabled=true)'; /* IE8+ */ 
+}
+
+#hesterni-bottom-right{
+	background: url(../../images/avtospektr/layout/hesterni-bottom-right.png) no-repeat;
+	position: absolute;
+	height: 398px;
+	width: 348px;
+	left: 1408px;
+	bottom:0;
+	opacity: 0.3;
+}
+#spring-bottom{
+	background: url(../../images/avtospektr/layout/spring-bottom.png) no-repeat;
+	position: absolute;
+	height: 189px;
+	width: 138px;
+	left: 1550px;
+	bottom:430px;
+	opacity: 0.2;
+}
+#hesterni-bottom-left{
+	background: url(../../images/avtospektr/layout/hesterni-bottom-left.png) no-repeat;
+	position: absolute;
+	height: 398px;
+	width: 348px;
+	left: -150px;
+	bottom:0;
+	opacity: 0.3;
+}
+
+

@@ -1,0 +1,293 @@
+html { height: 100%;  font: .75em/1.5 Verdana,Arial,Helvetica, sans-serif; }
+body { height: auto !important; height: 100%; min-height: 100%; margin: 0; padding: 0;  } /* body height 100% */
+a {color: #000; text-decoration: none;}
+h1,h2 {padding-left: 5px;}
+.breadcrumbs {padding-left: 5px;}
+#wrapper {
+	background:#0a0c0b;
+	height:100%;
+	width:100%;
+	background-repeat: repeat-y;
+	min-height:100%;
+    min-width: 1280px;
+
+
+
+}
+
+.left_green {
+
+	overflow:hidden;
+
+	
+}
+
+.right_green {
+	
+	overflow:hidden;
+	 
+}
+
+
+#container {
+	
+	background:white;
+
+	width:1000px;
+	
+	
+}
+
+#header {
+
+	background:url(../../images/avtospektr/header.jpg);
+	height:212px;
+	margin:0px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+
+	
+}
+
+#firms {
+	
+	background:url(../../images/avtospektr/list_firms.jpg);
+	width:100%;
+	margin:0px;
+	padding:0px;
+	height:52px;
+    background-repeat: no-repeat;
+	
+}
+
+
+#nav_bar {
+margin-top:1px;	
+	
+}
+
+.label {
+
+	background:url(../../images/avtospektr/label_background.png);
+	margin:0px;
+	padding:0px;
+	height:41px;
+	border-right:1px solid #617156;
+	text-align:left;
+
+}
+
+.label font {
+	padding-left:30px;
+	font-size:17px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000;
+	text-shadow: 1px 1px 2px white;
+}
+
+#sidebar {
+	
+	float:left;
+	width:301px;
+}
+
+#menu_catalog {border: 1px solid #bde0a3;}
+
+
+
+.menu_option span {
+
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.fio span {
+
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.profile_option div {
+
+    margin-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 13px;
+
+}
+
+.profile {padding-bottom: 0px;}
+
+.profile_option img{
+
+
+    padding-right: 10px;
+
+
+}
+
+.menu_option:hover {cursor: pointer;}
+
+.fio:hover {cursor: default;}
+
+
+.submenu1_option {background: #def1d9;}
+.submenu2_option {background: #caf1c0;}
+
+.submenu1_option span {
+
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 12px;
+
+
+}
+
+.submenu2_option span {
+
+    padding-left: 70px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 11px;
+
+
+}
+
+.submenu1_option .menu_arrow img {padding-top: 0px; padding-bottom: 0px; padding-right: 0.7em;}
+.submenu2_option .menu_arrow img {padding-top: 0px; padding-bottom: 0px; padding-right: 0.7em;}
+
+.menu_arrow img {padding-top: 10px; padding-bottom: 10px; padding-right: 8px;}
+.menu_row {border-bottom: 1px solid #7f7f7f;border-top: 1px solid #bde0a3;}
+
+.auth {vertical-align: middle;}
+#authorization font {vertical-align: middle;}
+.auth_input {width: 230px;}
+.authorization div {width: 100%;padding-left: 30px;padding-top: 4px;color: #000;
+    font-size: 13px;}
+.authorization input {border-right: 1px solid #bde0a3;border-bottom: 1px solid #bde0a3;border-left: 1px solid #7f7f7f; border-top: 1px solid #7f7f7f;}
+
+.reg_forget {text-align: left;}
+.reg_forget div {margin-top: -10px;}
+.reg_forget div a {margin-left: -60px;}
+
+.auth_submit {background: #bde0a3; font-size: 14px;width: 100px; height: 25px;}
+#menu_authorization {margin-bottom: 10px;border-right: 1px solid #bde0a3;}
+
+#container_content {padding: 10px; margin-left: 300px; }
+#content_substrate {margin: 2px 0px 2px 2px; border: 1px solid #bde0a3;}
+#content { width: 670px;padding: 5px 0px 5px 5px;}
+
+#our_partners {margin-top: 70px;padding-left: 25px;}
+#list_partners {margin-top: 25px;}
+#partners {margin-bottom: 20px;max-height: 300px;}
+#footer {color: #446027;font-size: 13px;font-weight: bold; margin-top: 15px;margin-bottom: 15px;}
+
+.hidden_menu {display: none;position: absolute;z-index: 2;left:300px;width: 250px;background: white;border: 0.1em solid #bde0a3}
+div.menu_option {white-space: nowrap;}
+.child {cursor: pointer;}
+.ajax_loader {padding-left: 50px;padding-top: 50px;}
+
+table.info_table {font-family: Verdana;border: 1px solid #047b42;}
+table.info_table th {border-bottom: 1px solid #047b42;border-right: 1px solid #047b42;}
+table.info_table td {border-bottom: 1px solid #047b42;border-right: 1px solid #047b42;padding: 2px;}
+table.info_table tr td {font-size: 11px;}
+.pager {margin-bottom: 15px;padding-left: 5px;}
+.num_pages {margin-left: 10px;font-size: 11px;text-align: right;}
+#container_info_table {margin-bottom: 15px;padding-left: 5px;}
+.filter {padding-left: 5px;margin-bottom: 10px;}
+.filter input {border: 1px solid #000000;}
+.filter #container_filter div {border: 1px inset #023e21;margin-top: 3px;}
+#clients_filter {width: 500px;padding: 4px;background: #edf5de;}
+#client {width: 235px;margin-left: 10px;}
+#distributor {width: 201px;margin-left: 10px;border: 1px solid #000000;}
+#distributors_filter {width: 500px;padding: 4px; background: #dff2bb;}
+#time_filter {width: 500px;padding: 4px; background: #d3f298;}
+#number_filter {padding: 4px; width: 500px; background: #c2f499;}
+#input_number {width: 200px;margin-left: 14px;}
+#manufacturer_filter {padding: 4px; width: 500px; background: #b0ee7f;}
+#description_filter {padding: 4px; width: 500px; background: #b5eaa7;}
+#manufacturer_number {width: 200px;margin-left: 4px;}
+
+#description {margin-left: 38px;border: 1px solid #000000;width: 355px;}
+#turner_filter {margin-bottom: 3px;}
+#type_payments {width: 200px;margin-left: 20px;}
+#type_operation {width: 200px;margin-left: 12px;}
+#submit_filter {border: 0px !important; margin-top: 10px !important;margin-bottom: 10px;}
+.no_results {margin-left: 5px;font-weight: bold;}
+
+.parts_list {cursor:pointer;text-decoration:underline;}
+.partshidden_list {display:none;z-index:1;position:absolute;}
+.list_clients {border: 1px solid #000000;}
+.finance_info {padding-left: 10px;font-weight: bold;}
+.link_info {text-decoration: underline;cursor: pointer;}
+#time_filter #formDate1 {margin-left: 16px;}
+.list_statuses {font-size: 10px;border: 1px inset #000;width: 140px;}
+#to_work_popup {padding: 5px;}
+#to_work_popup .info {margin-top: 5px;}
+.order_statistic {margin-left: 5px;margin-bottom: 10px;}
+.order_statistic a {text-decoration: underline;}
+.payments_sum {width: 160px;}
+.container_chart {padding-left: 10px;padding-right: 5px;}
+#container_choice_year {padding-left: 0px;}
+.client_info {padding-top: 15px;padding-left: 10px;font-weight: bold;padding-bottom: 10px;padding-right: 10px;}
+.client_info .inner_client_info {border: 1px solid #089a53;}
+.edit_block {padding-left: 5px;width: 500px;}
+
+.edit_block #limit_credit {width: 50px;}
+.input_markups {width: 30px;}
+#add_markup {margin-left: 2px;}
+#add_markup span {cursor: pointer; text-decoration: underline;}
+#container_input_distributor {display: none;}
+.container_tiny {padding: 5px 5px 10px 5px;}
+#catalog_info {padding: 5px;}
+#catalog_info a {font-size: 14px;font-weight: bold;}
+.add_client {padding-left: 35%;margin-bottom: 10px;}
+.add_client a {text-decoration: underline;color: #047b42;}
+.add_client  img {margin-bottom: -3px;}
+.catalog_link a {text-decoration: underline;color: #034726;}
+#form_import {padding-left: 10px;}
+.container_control span.header {font-weight: bold;}
+.container_control span.control {font-size: 12px;}
+#import_block_message {padding-left: 10px;margin-top: 10px;}
+.product_info td {background: #c8ddc3;font-weight: bold;}
+.product_info th {background: #b0dda5;font-weight: bold;}
+.store_buttons a {margin: 2px;}
+.store_buttons a span {background: #c8ddc3;font-weight: bold;padding: 3px;}
+.edit_distributor input.text {width: 200px;}
+.edit_accesses input {width: 145px;}
+#profile_user {padding-left: 5px;background:  #D3F298;padding-bottom: 10px;width: 90%;}
+.input_text {border: 1px inset #73B244;width: 250px;}
+.profile_label {margin-bottom: 5px;font-weight: bold;}
+#profile_password {text-decoration: underline; cursor: pointer;}
+#container_profile_password {padding-bottom: 15px;;margin-top: 10px;padding-right: 15px;}
+#container_profile_password input {margin-left: 5px;}
+#container_profile_submit {padding-top: 10px;}
+#container_export {margin-left: 245px;}
+#container_editor {padding-top: 10px;width: 95%;}
+#content_header {min-width: 400px;}
+#content_submit {margin-top: 15px;}
+
+
+
+
+
+
+
+
+
+
+
+

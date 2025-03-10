@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /_gs_data_
+Disallow: /assets
+Disallow: /protected
+Disallow: /templates
+Disallow: /themes
+Disallow: /webstat
+
+# запретить всем роботам индексировать ссылки,
+#которые начинаются с /news
+
+

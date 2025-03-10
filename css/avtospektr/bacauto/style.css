@@ -1,0 +1,160 @@
+
+.small_news {
+	margin-bottom: 35px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top:10px;
+}
+.small_news .item {
+	margin-bottom: 25px;
+	position: relative;
+}
+.small_news .item  img {
+	float: left;
+	margin-top: 3px;
+}
+.small_news .item .info {
+	padding-left: 88px;
+	line-height: 17px;
+    padding-top: 0px !important;
+	border: 0px !important;
+	
+}
+.small_news .item .info span {
+	font-size: 10px;
+}
+
+.clear {
+	font-size: 1px;
+	clear: both;
+	width: 100%;
+}
+
+.dropTable{ float:left; width:100%; margin-top: 10px;}
+.dropTable table{ width:100%; font-size:11px; border:1px solid #7F9DB9;font-family: Verdana, Geneva, sans-serif;}
+.dropTable td{font-size:9px; border:1px solid #63819c;}
+.dropTable th{ height:30px; background:#b5eaa7; vertical-align:middle; text-align:center;}
+.head_drop_table {height: 20px; font-weight: bold; background: #2e9613; color: #ffffff;margin-top: 10px;}
+
+#search_panel {padding-top: 5px;}
+tr.search_panel{cursor:pointer;background-color:#eaf8e0 !important;color:#444;text-transform:uppercase;}
+tr.search_panel:hover{	background-color:#b0f2a6 !important; }
+#content_ibox {position: relative;}
+
+td#footer_menu {height:160px;background:url(../images/style/bg_footer_menu_t.gif) #FFE9C4 no-repeat center top;padding:0 20px 0 50px;}
+div.col {float:left;margin:12px 60px 0 0;max-width:170px;}
+div.col.last {margin-right:0px;white-space:nowrap;}
+div.col h2 {font-size:1em;font-weight:bold;margin:0 0 5px 0;}
+div.col ul {list-style-type:none;margin:0px;padding:0px;font-size:0.9em;}
+div.col ul li {display:block;margin:0 0 5px 0;padding:0px;}
+td.footer_menu_b{height:6px;background:url(../images/style/bg_footer_menu_b.gif) #FFE9C4 no-repeat center;}
+
+.tableBox{ float:left; width:98%; }
+.tableBox table{ width:100%; font-size:11px; border:1px solid #2e4305; }
+.tableBox th{ height:40px; background:#addb9b; vertical-align:middle; text-align:center; }
+.tableBox p{ margin:0; }
+.tableBox tr.tv{ cursor:pointer; }
+.tableBox tr.tv:hover{ background:#bbedac!important; }
+.tableBox tr{ height:30px; background:#f3fef0;}
+.tableBox tr td{ padding-left:10px; }
+.tableBox .tabletitle{ background:#d4efcc; }
+.tableBox .tabletitle p{ font-weight:bold; }
+.tableBox .cell1{ width:15%; }
+.tableBox .cell2{ width:10%; }
+.tableBox .cell3{ width:5%; }
+.tableBox .cell4{ width:40%; }
+.tableBox .cell5{ width:10%; }
+.tableBox .cell6{ width:10%; }
+.tableBox .cell7{ width:10%; }
+.tableBox .cell8{ width:10%;  padding:0; }
+.tableBox .inbasket{ display:block; position:relative;
+    top:3px; height:22px; width:16px; margin:0 auto; background:url(../../../images/avtospektr/v.gif) no-repeat;}
+
+.tableAdmin{ float:left; width:100%; }
+.tableAdmin table{ width:100%; font-size:11px; border:1px solid #7F9DB9;}
+.tableAdmin td{ width:100%; font-size:9px; border:1px solid #7F9DB9;}
+.tableAdmin th{ height:40px; background:#D8E4F0; vertical-align:middle; text-align:center;}
+.tableAdmin tr.tv{ cursor:pointer; }
+.tableAdmin tr.tv:hover{ background:#d8e4f0!important; }
+.tableAdmin tr{ height:30px; background:#F4F4F2;}
+.tableAdmin .tabletitle{ background:#E5E5E3; }
+.tableAdmin .tabletitle p{ font-weight:bold; }
+.tableAdmin tr td{ padding-left:10px; }
+.tableAdmin .cell1{ width:15%; }
+.tableAdmin .cell2{ width:10%; }
+.tableAdmin .cell3{ width:5%; }
+.tableAdmin .cell4{ width:40%; }
+.tableAdmin .cell5{ width:5%; }
+.tableAdmin .cell6{ width:10%; }
+.tableAdmin .cell7{ width:10%; }
+.tableAdmin .cell9{ padding-right:5px; }
+
+.tableAdmin .inbasket{ display:block; position:relative;
+    top:3px; height:22px; width:16px; margin:0 auto; background:url(../pictures/v.gif) no-repeat;}
+
+ form .tcart {
+    margin-bottom: 0px;
+    border: none;
+    border-collapse:collapse;
+    width:98%;
+    margin-left: 5px;
+}
+
+ form .tcart thead tr th {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #7d7d7d;
+    text-align: center;
+    padding: 5px 0;
+}
+
+ form .tcart td {
+    padding: 20px 0;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #a3a3a3;
+}
+
+ form .tcart .last_tr td {
+    border:none;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+ form .tcart tbody tr td input {
+    text-align: center;
+    width: 30px;
+}
+
+.tcart .price {
+    font-weight: bold;
+    color: #9d0000;
+}
+
+ form .tcart tbody tr .separ {
+    font-size: 1px;
+    height: 30px;
+}
+
+ form .tcart tbody tr .price.big {
+    font-size: 14px;
+}
+
+ form .line_buttons {
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: left;
+}
+
+ form .line_buttons input {
+    margin-right: 20px;
+}
+
+.menu_row a:hover {background-position: 270px -29px;
+    color: #4fc541;	}
+
+
+
+
+
